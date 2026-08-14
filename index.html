@@ -85,3 +85,192 @@
 
 </body>
 </html>
+/* Configurações Gerais */
+:root {
+  --rosa-claro: #ffe6f0;
+  --rosa-principal: #ffb3d9;
+  --rosa-escuro: #ff66b2;
+  --roxo-fofo: #d9b3ff;
+  --texto: #5a4059;
+  --brancura: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--rosa-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Fredoka', cursive;
+}
+
+/* Header / Menu */
+header {
+  background-color: var(--brancura);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(255, 102, 178, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--rosa-escuro);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--rosa-escuro);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, var(--rosa-claro) 100%);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--rosa-escuro);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--rosa-escuro);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(255, 102, 178, 0.4);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #ff3399;
+}
+
+/* Containers e Seções */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2rem;
+  color: var(--rosa-escuro);
+  margin-bottom: 2rem;
+}
+
+/* Galeria de Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--brancura);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  border: 3px solid #fff0f5;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1.2rem;
+}
+
+.card-info h3 {
+  color: var(--rosa-escuro);
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--roxo-fofo);
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Dicas */
+.alt-bg {
+  background-color: var(--brancura);
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dicas-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dica-box {
+  background-color: var(--rosa-claro);
+  padding: 1.5rem;
+  border-radius: 15px;
+  flex: 1 1 300px;
+}
+
+.dica-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--rosa-principal);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: bold;
+}
